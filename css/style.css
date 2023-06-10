@@ -11,15 +11,20 @@ body {
 
 header {
     border: 30px solid transparent;
-    border-image: url(./images_1.png) 10 30px no-repeat;
-    height: 150px;
+    border-image-source: url(lorem.png);
+    border-image-slice: 10;
+    border-image-width: 25px;
+    height: 250px;
     background-color: rgb(14, 253, 253);
 }
 
 #Navigation_bar>nav>ul {
+    border-image-source: url(./images_1.png);
+    border-image-slice: 10;
+    border-image-width: 20px;
     background-color: rgb(28, 153, 255);
     width: 2700px;
-    margin-left: 150px;
+    margin: 25px 150px;
     list-style-type: none;
     padding: 15px;
 }
@@ -56,13 +61,15 @@ a:hover {
 
 main>#bannar-first {
     display: block;
-    border-image: url(./image-1-1.png) 10 10px 5px no-repeat;
+    border: 30px solid transparent;
+    border-image: url(./images_1.png) 10;
     background: url(./download__1.png) center/cover no-repeat content-box fixed;
 }
 
 #bannar-first>picture {
+    border-image: url(./images_1.png) 10px 5px no-repeat;
     display: block;
-    margin: 140px;
+    margin: 110px;
 }
 
 #bannar-first>picture>img {
