@@ -10,11 +10,14 @@ body {
 }
 
 header {
-    background-color: burlywood;
+    border: 30px solid transparent;
+    border-image: url(./images_1.png) 10 30px no-repeat;
+    height: 150px;
+    background-color: rgb(14, 253, 253);
 }
 
 #Navigation_bar>nav>ul {
-    background-color: rgb(248, 211, 156);
+    background-color: rgb(28, 153, 255);
     width: 2700px;
     margin-left: 150px;
     list-style-type: none;
@@ -32,7 +35,7 @@ li {
 
 a {
     color: white;
-    background-color: rgb(156, 65, 231);
+    background-color: rgb(2, 3, 3);
     padding: 15px;
     border: 5px transparent;
     border-radius: 5px;
@@ -46,7 +49,24 @@ a {
 }
 
 a:hover {
-    background-color: crimson;
+    background-color: rgba(155, 208, 243, 20%);
     border-bottom: solid greenyellow;
     text-shadow: 5px 3px 5px rgb(250, 253, 223);
+}
+
+main>#bannar-first {
+    display: block;
+    border-image: url(./image-1-1.png) 10 10px 5px no-repeat;
+    background: url(./download__1.png) center/cover no-repeat content-box fixed;
+}
+
+#bannar-first>picture {
+    display: block;
+    margin: 140px;
+}
+
+#bannar-first>picture>img {
+    width: 900px;
+    padding: 15px;
+    height: 900px;
 }
